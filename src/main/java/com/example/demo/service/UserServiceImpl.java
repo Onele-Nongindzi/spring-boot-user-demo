@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
     private final FakeRepoInterface fakeRepo;
+    private static long idCounter = 1;
 
     @Autowired
     public UserServiceImpl(FakeRepoInterface fakeRepo) {
@@ -15,8 +16,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void addUser(String name, String surname) {
-        long id = System.currentTimeMillis(); // Simple ID generation
-        String addedName = fakeRepo.insertUser(id, name, surname);
+        String addedName = fakeRepo.insertUser(idCounter++, name, surname);
         System.out.println(addedName + " added");
     }
 
@@ -34,5 +34,10 @@ public class UserServiceImpl implements UserService {
         if (name != null) {
             System.out.println("hello " + name);
         }
+    }
+
+    // Helper method for testing to reset ID counter
+    public static void resetIdCounter() {
+        idCounter = 1;
     }
 }

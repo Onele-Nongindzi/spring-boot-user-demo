@@ -13,16 +13,22 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 class UserServiceTests {
 
     @Autowired
-    private UserService userService;
+    private UserServiceImpl userService; // Use concrete class to access resetIdCounter
 
     @Autowired
     private FakeRepoInterface fakeRepo;
 
     @BeforeEach
     void setUp() {
-        // Clear the repository before each test
-        while (fakeRepo.deleteUser(1) != null) {
-            // Keep deleting until no more users with ID 1
+        // Reset ID counter
+        UserServiceImpl.resetIdCounter();
+        // Clear all users from repository
+        while (fakeRepo.findUserById(1) != null) {
+            fakeRepo.deleteUser(1);
+        }
+        // Ensure no users remain with higher IDs
+        for (long i = 2; fakeRepo.findUserById(i) != null; i++) {
+            fakeRepo.deleteUser(i);
         }
     }
 
@@ -55,6 +61,8 @@ class UserServiceTests {
         userService.addUser("Alice", "Brown");
         String name = fakeRepo.findUserById(1);
         assertEquals("Alice", name);
+        String name2 = fakeRepo.findUserById(2);
+        assertEquals("Alice", name2);
     }
 
     @Test
