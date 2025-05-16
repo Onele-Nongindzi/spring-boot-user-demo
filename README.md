@@ -19,7 +19,7 @@ Gradle: 8.13
 
 ## Prerequisites
 
-JDK 17: Ensure Java 17 is installed (e.g., Eclipse Temurin).
+JDK 17: Ensure Java 17 is installed.
 Gradle: Included via the Gradle wrapper (gradlew).
 Git: For cloning and version control.
 
