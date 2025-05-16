@@ -1,4 +1,4 @@
-Spring Boot User Management Demo
+**Spring Boot User Management Demo**
 Overview
 This project is a simple Spring Boot web application demonstrating core concepts such as MVC layered architecture, dependency injection, annotations, in-memory data storage, and unit testing. It implements a user management system with CRUD operations (Create, Read, Delete) accessible via REST API endpoints.
 Features
