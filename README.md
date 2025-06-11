@@ -88,32 +88,6 @@ Removing users
 
 Check terminal output for success messages.
 
-## 🗂️ Project Structure
-plaintext
-Copy
-Edit
-spring-boot-user-demo/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/demo/
-│   │   │   ├── DemoApplication.java          # Spring Boot entry point
-│   │   │   ├── model/
-│   │   │   │   └── User.java                 # User model
-│   │   │   ├── repo/
-│   │   │   │   ├── FakeRepoInterface.java    # Repository interface
-│   │   │   │   └── FakeRepo.java             # In-memory repo
-│   │   │   ├── service/
-│   │   │   │   ├── UserService.java          # Service interface
-│   │   │   │   └── UserServiceImpl.java      # Implementation
-│   │   │   ├── controller/
-│   │   │   │   └── UserController.java       # REST Controller
-│   ├── test/
-│   │   └── java/com/example/demo/service/
-│   │       └── UserServiceTests.java         # Unit tests
-├── build.gradle                               # Gradle config
-├── .gitignore
-├── README.md
-🌱 Git Workflow
 Follows the Gitflow branching model:
 
 main: Stable, production-ready code
@@ -123,9 +97,7 @@ develop: Integrated changes under review
 feature/xyz: Individual features
 
 Example Workflow:
-bash
-Copy
-Edit
+
 git checkout -b feature/your-feature
 git commit -m "feat: add REST controller"
 git push origin feature/your-feature
@@ -143,21 +115,15 @@ Java issues: Verify JAVA_HOME is set to JDK 17
 Gradle deprecations: Run ./gradlew build --warning-mode all to identify problems
 
 ## 🤝 Contributing
-Fork the repo
+#### Fork the repo
 
-Create your branch:
+#### Create your branch:
 git checkout -b feature/your-feature
 
-Commit and push your changes:
+##### Commit and push your changes:
 git commit -m "feat: add your feature"
 
-Open a Pull Request to develop
+#### Open a Pull Request to develop
 
 ## 📄 License
 This project is licensed under the MIT License.
-
-vbnet
-Copy
-Edit
-
-Let me know if you'd like to add badges, a logo, or a link to a live demo! You can also check out a
