@@ -40,7 +40,7 @@ This project is a simple Spring Boot web application demonstrating core concepts
    git clone https://github.com/Onele-Nongindzi/spring-boot-user-demo.git
    cd spring-boot-user-demo
 2. Start the application:
-- `./gradlew bootRun
+- ./gradlew bootRun
 3. Access the app at:
 http://localhost:8080
 
@@ -65,7 +65,7 @@ Console Output Examples:
 ## ✅ How to Test
 Run unit tests with:
 
-./gradlew test
+- ./gradlew test
 Test results: build/reports/tests/test/index.html
 
 Covers service logic and edge cases like invalid input or duplicates.
