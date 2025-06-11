@@ -91,10 +91,10 @@ Use the API endpoints listed above to manually verify:
 
 Example Workflow:
 
-git checkout -b feature/your-feature
-git commit -m "feat: add REST controller"
-git push origin feature/your-feature
-Then open a Pull Request to develop, and later merge into main.
+- git checkout -b feature/your-feature
+- git commit -m "feat: add REST controller"
+- git push origin feature/your-feature
+- Then open a Pull Request to develop, and later merge into main.
 
 Commit message types: feat, fix, test, docs, refactor, style, chore
 
@@ -108,7 +108,7 @@ Java issues: Verify JAVA_HOME is set to JDK 17
 Gradle deprecations: Run ./gradlew build --warning-mode all to identify problems
 
 ## 🤝 Contributing
-#### Fork the repo
+1. Fork the repo
 
 #### Create your branch:
 git checkout -b feature/your-feature
