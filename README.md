@@ -39,13 +39,9 @@ This project is a simple Spring Boot web application demonstrating core concepts
    ```bash
    git clone https://github.com/Onele-Nongindzi/spring-boot-user-demo.git
    cd spring-boot-user-demo
-Start the application:
-
-bash
-Copy
-Edit
-./gradlew bootRun
-Access the app at:
+2. Start the application:
+-` ./gradlew bootRun
+3. Access the app at:
 http://localhost:8080
 
 Console logs show feedback like [name] added when endpoints are called.
