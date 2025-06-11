@@ -37,7 +37,7 @@ This project is a simple Spring Boot web application demonstrating core concepts
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Onele-Nongindzi/spring-boot-user-demo.git
    cd spring-boot-user-demo
 Start the application:
 
