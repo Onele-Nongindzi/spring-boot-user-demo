@@ -50,7 +50,7 @@ http://localhost:8080
 
 Console logs show feedback like [name] added when endpoints are called.
 
-📡 API Endpoints
+## 📡 API Endpoints
 Interact using curl, Postman, or a browser.
 
 Method	Endpoint	Description	Example
@@ -66,7 +66,7 @@ GET: hello [name]
 
 DELETE: [name] removed
 
-✅ How to Test
+## ✅ How to Test
 Run unit tests with:
 
 bash
@@ -88,7 +88,7 @@ Removing users
 
 Check terminal output for success messages.
 
-🗂️ Project Structure
+## 🗂️ Project Structure
 plaintext
 Copy
 Edit
@@ -133,7 +133,7 @@ Then open a Pull Request to develop, and later merge into main.
 
 Commit message types: feat, fix, test, docs, refactor, style, chore
 
-🧰 Troubleshooting
+## 🧰 Troubleshooting
 Tests fail: Check the test report at build/reports/tests/test/index.html
 
 API errors: Ensure server is running and using valid endpoints
@@ -142,7 +142,7 @@ Java issues: Verify JAVA_HOME is set to JDK 17
 
 Gradle deprecations: Run ./gradlew build --warning-mode all to identify problems
 
-🤝 Contributing
+## 🤝 Contributing
 Fork the repo
 
 Create your branch:
@@ -153,7 +153,7 @@ git commit -m "feat: add your feature"
 
 Open a Pull Request to develop
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
 
 vbnet
