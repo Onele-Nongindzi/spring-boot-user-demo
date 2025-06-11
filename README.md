@@ -40,7 +40,7 @@ This project is a simple Spring Boot web application demonstrating core concepts
    git clone https://github.com/Onele-Nongindzi/spring-boot-user-demo.git
    cd spring-boot-user-demo
 2. Start the application:
--` ./gradlew bootRun
+- `./gradlew bootRun
 3. Access the app at:
 http://localhost:8080
 
@@ -50,47 +50,44 @@ Console logs show feedback like [name] added when endpoints are called.
 Interact using curl, Postman, or a browser.
 
 Method	Endpoint	Description	Example
-POST	/api/users?name={name}&surname={surname}	Add a new user	curl -X POST "http://localhost:8080/api/users?name=John&surname=Doe"
-GET	/api/users/{id}	Retrieve user by ID	curl -X GET "http://localhost:8080/api/users/1"
-DELETE	/api/users/{id}	Remove user by ID	curl -X DELETE "http://localhost:8080/api/users/1"
+- POST	/api/users?name={name}&surname={surname}	Add a new user	curl -X POST "http://localhost:8080/api/users?name=John&surname=Doe"
+- GET	/api/users/{id}	Retrieve user by ID	curl -X GET "http://localhost:8080/api/users/1"
+- DELETE	/api/users/{id}	Remove user by ID	curl -X DELETE "http://localhost:8080/api/users/1"
 
 Console Output Examples:
 
-POST: [name] added
+- POST: [name] added
 
-GET: hello [name]
+- GET: hello [name]
 
-DELETE: [name] removed
+- DELETE: [name] removed
 
 ## ✅ How to Test
 Run unit tests with:
 
-bash
-Copy
-Edit
 ./gradlew test
 Test results: build/reports/tests/test/index.html
 
 Covers service logic and edge cases like invalid input or duplicates.
 
-🧪 Manual Testing
+## 🧪 Manual Testing
 Use the API endpoints listed above to manually verify:
 
-Adding new users
+1. Adding new users
 
-Fetching existing users
+2. Fetching existing users
 
-Removing users
+3. Removing users
 
-Check terminal output for success messages.
+4. Check terminal output for success messages.
 
-Follows the Gitflow branching model:
+5. Follows the Gitflow branching model:
 
-main: Stable, production-ready code
+6. main: Stable, production-ready code
 
-develop: Integrated changes under review
+7. develop: Integrated changes under review
 
-feature/xyz: Individual features
+8. feature/xyz: Individual features
 
 Example Workflow:
 
