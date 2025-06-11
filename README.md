@@ -66,7 +66,7 @@ Console Output Examples:
 Run unit tests with:
 
 - ./gradlew test
-Test results: build/reports/tests/test/index.html
+- Test results: build/reports/tests/test/index.html
 
 Covers service logic and edge cases like invalid input or duplicates.
 
