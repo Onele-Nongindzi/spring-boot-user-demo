@@ -46,7 +46,7 @@ http://localhost:8080
 
 Console logs show feedback like [name] added when endpoints are called.
 
-## 📡 API Endpoints
+## 📡 API Endpoints {#api-endpoints}
 Interact using curl, Postman, or a browser.
 
 Method	Endpoint	Description	Example
